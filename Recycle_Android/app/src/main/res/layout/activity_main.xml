@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="30dp"
+            android:text="RECYCLE"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:fontFamily="@font/typo_ssangmundongb"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/glassbtn"
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:src="@drawable/glass_btn" />
+        <ImageButton
+            android:id="@+id/canbtn"
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:src="@drawable/can_btn" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/trashbtn"
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:src="@drawable/trash_btn" />
+        <ImageButton
+            android:id="@+id/plasticbtn"
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:src="@drawable/plastic_btn" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/Use"
+            android:layout_width="170dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="40dp"
+            android:textSize="25sp"
+            android:fontFamily="@font/typo_ssangmundongb"
+            android:text="사용법"
+            android:background="@drawable/button"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/Read"
+            android:layout_width="170dp"
+            android:layout_height="100dp"
+            android:fontFamily="@font/typo_ssangmundongb"
+            android:text="주의사항"
+
+            android:textSize="25sp"
+            android:background="@drawable/button"
+            tools:ignore="MissingConstraints"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnConnect"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="105dp"
+            android:fontFamily="@font/typo_ssangmundongb"
+            android:text="연결"
+            tools:ignore="MissingConstraints" />
+        <Button
+            android:id="@+id/btnPopup"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="@font/typo_ssangmundongb"
+            android:text="용량 세팅"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+</LinearLayout>
